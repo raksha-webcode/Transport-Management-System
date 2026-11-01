@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🚚 Transport Management System</h1>
+    <p>Admin Dashboard</p>
+</header>
+
+<nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#vehicles">Vehicles</a>
+    <a href="#drivers">Drivers</a>
+    <a href="#trips">Trips</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="dashboard">
+        <h2>Dashboard Overview</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Total Vehicles</h3>
+                <p id="vehicleCount">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Drivers</h3>
+                <p id="driverCount">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Trips</h3>
+                <p id="tripCount">0</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vehicles">
+        <h2>Vehicle Management</h2>
+        <form id="vehicleForm">
+            <input id="vehicleNumber" placeholder="Vehicle Number" required>
+            <input id="vehicleType" placeholder="Vehicle Type" required>
+            <button type="submit">Add Vehicle</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vehicle Number</th>
+                    <th>Vehicle Type</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="vehicleList"></tbody>
+        </table>
+    </section>
+
+    <section id="drivers">
+        <h2>Driver Management</h2>
+        <form id="driverForm">
+            <input id="driverName" placeholder="Driver Name" required>
+            <input id="driverPhone" placeholder="Phone Number"
+                   type="tel" required>
+            <button type="submit">Add Driver</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Driver Name</th>
+                    <th>Phone Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="driverList"></tbody>
+        </table>
+    </section>
+
+    <section id="trips">
+        <h2>Trip Management</h2>
+        <form id="tripForm">
+            <input id="source" placeholder="Starting Location" required>
+            <input id="destination" placeholder="Destination" required>
+            <button type="submit">Add Trip</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tripList"></tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Transport Management System</p>
+        <p>Email: transport@example.com</p>
+        <p>Location: India</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Transport Management System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
